@@ -1,0 +1,139 @@
+
+/* ---------- Globle Style ---------- */
+*
+{
+    padding:0px;
+    margin: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* ---------- End Globle Style ---------- */
+/* ---------- Style Api Connecting ---------- */
+.content-movie h2
+{
+    font-size: 24px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+.content-movie p
+{
+    font-size: 19px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+}
+
+.content-movie
+{
+    overflow: hidden;
+    position: relative;
+    
+}
+.movie-blur
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    background-color: rgba(255, 255, 255, 0.61) ;
+    transition: all 0.8s linear;
+}
+
+.content-movie:hover .movie-blur
+{
+    top: 0%;
+}
+/* ---------- End Style Api Connecting ---------- */
+/* ---------- Style Side Bar ---------- */
+.sideNav
+{
+    z-index: 99999999999999;
+}
+.headerNav 
+{
+
+    width: 60px;
+    height: 100vh;
+    z-index: 55555555;
+    background-color: #f8f6f6;
+    text-align: center;
+    transition: all 0.6s ease;
+}
+.navLogo 
+{
+    padding:24px 0px;
+}
+.navLogo img 
+{
+    height: 50px;
+}
+
+.toggelMenu
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.toggelMenu i 
+{
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.socialIcon
+{
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 9;
+}
+.socialIcon > div 
+{
+    padding-top: 10px
+}
+.tabMenu 
+{
+    width: 210px;
+    background-color: #000;
+}
+
+.navItem ul li a,
+footer a
+{
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s;
+}
+
+.navItem ul li a:hover,
+footer a:hover
+{
+    color: #ff655c;
+}
+
+.copyright p
+{
+    font-size: 14px;
+    font-weight: 600;
+    color: white; 
+}
+/* ---------- End Style Side Bar ---------- */
+/* ---------- Search Section ---------- */
+.search .form-control,
+.form-group .form-control
+{
+    border: none !important;
+    border-bottom: 2px solid #f8f6f663 !important;
+}
+::placeholder
+{
+	font-weight: 400;
+	font-size: 17px;
+	text-align: center;
+}
+/* ---------- End Search Section ---------- */

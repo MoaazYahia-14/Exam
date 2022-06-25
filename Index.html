@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Exam</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ---------- Links Style Css && Bootstrap && ICONS ----------  -->
+    <link rel="stylesheet" href="Css/all.min.css" />
+    <link rel="stylesheet" href="Css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Css/main.css" />
+</head>
+
+<body class="bg-dark">
+    <!-- ---------- Side Bar ---------- -->
+    <!-- ---------------------------------- -->
+    <nav class="sideNav position-fixed top-0 bottom-0 d-flex">
+        <div class="tabMenu">
+            <div class="navItem">
+                <ul class="list list-unstyled p-3">
+                    <li class="py-1"><a class="nav-link" href="#now_playing" id="now_playing">Now playing</a></li>
+                    <li class="py-1"><a class="nav-link" href="#popular" id="popular">Popular</a></li>
+                    <li class="py-1"><a class="nav-link" href="#top_rated" id="top_rated">Top Rated</a></li>
+                    <li class="py-1"><a class="nav-link" href="#trending" id="trending">Trending</a></li>
+                    <li class="py-1"><a class="nav-link" href="#upcoming" id="upcoming">Upcoming</a></ li>
+                    <li class="py-1"><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <footer class="socialItem position-absolute bottom-0 py-3 px-3">
+                <a href="#" class="mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="mx-2"><i class="fas fa-globe"></i></a>
+                <div class="copyright py-2">
+                    <p>Copyright Â© 2019 All Rights Reserved.</p>
+                </div>
+            </footer>
+        </div>
+        <div class="headerNav position-relative">
+            <div class="navLogo">
+                <img src="Image/logo.png" alt="logo">
+            </div>
+            <div class="toggelMenu">
+                <i class="fa fa-align-justify" id="icon"></i>
+            </div>
+            <div class="socialIcon">
+                <div class="globe">
+                    <span>
+                        <i class="fas fa-globe"></i>
+                    </span>
+                </div>
+                <div class="share">
+                    <span>
+                        <i class="fas fa-share-alt"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <!-- ----------End SideBar ---------- -->
+    <!-- ---------------------------------- -->
+
+    <!-- ---------- Search Section---------- -->
+    <!-- ---------------------------------- -->
+
+    <!-- ----------End Search Section ---------- -->
+    <!-- ---------------------------------- -->
+    <section class="search pt-5 ">
+        <div class="container w-75 ">
+            <div class="row">
+                <div class="col-md-6">
+                    <input id="byWord" class="form-control mb-5 bg-dark text-white" placeholder="get movies by word...">
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control mb-5 bg-dark text-white" id="search" placeholder="search..." >
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------- Display Apis ---------- -->
+    <!-- ---------------------------------- -->
+    <Section id="displayApis" class="Ap-Content bg-dark w-100 vh-100">
+        <div class="container">
+            <div class="row g-sm-4" id="displayApiData">
+            </div>
+        </div>
+            <!-- ---------- Countact Section---------- -->
+    <!-- ---------------------------------- -->
+    <section class="contect text-white" id="contact">
+        <div class="container py-5">
+            <div class="row">
+                    <h2 class="text-white-50 h3">Contact Us...</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input class="form-control my-3 bg-dark text-white " placeholder="enter your name" id="name">
+                                <div class="alert alert-danger d-none " id="namealert" role="alert">
+                                    Your Name is not valid
+                                </div>
+                                <input class="form-control my-3 bg-dark text-white" placeholder="enter Phone" id="phone">
+                                <div class="alert alert-danger d-none" id="phonealert" role="alert">
+                                    entre valid phone
+                                </div>
+                                <input class="form-control my-3 bg-dark text-white" placeholder="enter password" type="password" id="password">
+                                <div class="alert alert-danger d-none" id="passwordalert" role="alert">
+                                    entre valid password *Minimum eight characters, at least one letter and one number:*
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input class="form-control my-3 bg-dark text-white" placeholder="enter Email" type="email" id="email">
+                                <div class="alert alert-danger d-none" id="emailalert" role="alert">
+                                    entre valid email
+                                </div>
+                                <input class="form-control my-3 bg-dark text-white" placeholder="enter Age" id="age">
+                                <div class="alert alert-danger d-none" id="agealert" role="alert">
+                                    entre valid Age
+                                </div>
+                                <input class="form-control my-3 bg-dark text-white" placeholder="enter Repassword" type="password" id="rePassword">
+                                <div class="alert alert-danger d-none" id="repasswordalert" role="alert">
+                                    entre valid Repassword
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <bolton class="btn btn-outline-danger "> Sumbit</bolton>
+            </div>
+        </div>
+    </section>
+    <!-- ---------- End Contact Section ---------- -->
+    <!-- ---------------------------------- -->
+    </Section>
+    <!-- ---------- End Display Apis ---------- -->
+    <!-- ---------------------------------- -->
+
+
+
+
+    <!-- ---------- Links Script JS && Boostrap && jquery----------  -->
+    <script src="Js/jquery-3.6.0.min.js"></script>
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/main.js"></script>
+</body>
+
+</html>
